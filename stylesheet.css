@@ -1,0 +1,270 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1200px; /* or 1400px based on your preference */
+    margin: auto;
+    padding: 0 15px; /* Optional: for some spacing around the content */
+    background-color: lightgray;
+}
+
+.widther {max-width:680px}
+
+div.navbar {
+    background-color: black;
+    color: gray;
+    font-size:large ;
+    text-align: left;
+    padding:10px;
+}
+
+div.navbar ul li a {
+    color: white;
+    text-decoration: none; 
+}
+
+div.navbar ul li a:visited {
+    color: grey;
+}
+
+div.navbar ul li a:hover {
+    color: lightgrey; 
+}
+
+
+div.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;}
+
+div.navbar ul .right-buttons {
+    display: flex;
+}
+
+div.navbar ul li {
+    padding: 0 10px;
+}
+
+div.header {
+    padding:20px;
+    height: auto;
+    text-align: center;
+    background-image: url(images/ShapePoint-proto-1.png);
+    background-size: cover;
+    background-position:top ;
+}
+
+div.header {
+    position: relative;
+    z-index: 1;
+    color: aliceblue; /* or another contrasting color */
+}
+
+div.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: -1;
+}
+
+
+div.header h1 {
+    padding:20px;
+    font-size: 4em;;
+    color:aliceblue;
+    font-weight: 700;
+}
+
+div.header p {
+    font-size:large;
+    color:aliceblue;
+    font-weight: 400;
+    font-size: 1.75em;
+    padding: 0 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+button.cta-button {
+    background-color: #00C9FF; /* Bright Neon Blue */
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2em;
+    padding: 15px 40px;
+    border: 2px solid #00B5E2; /* Slightly darker shade for border */
+    border-radius: 50px; /* Pill shape */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px #00C9FF, inset 0 0 10px white; /* Outer and inner glow */
+    text-transform: uppercase; /* Optional: makes text all caps */
+    margin: 0 0 20px;
+}
+
+button.cta-button:hover {
+    background-color: #00E5FF; /* Lighter shade for hover */
+    box-shadow: 0 0 20px #00E5FF, inset 0 0 15px white;
+    transform: translateY(-3px); /* Button lifts up slightly */
+}
+
+button.cta-button a {
+    text-decoration: none; /* No underline */
+    color: white;
+}
+
+div.contact-us {
+    text-align: center;
+    color:black;
+    padding: 25px 0px;
+}
+
+div.contact-us iframe {
+    box-shadow: 0 0 15px #000000, inset 0 0 10px white; /* Outer and inner glow */
+
+}
+
+div.gallery {
+    text-align: center;
+    color:black;
+    align-items: center;
+    width:100%;
+}
+
+div.gallery-images-small {
+    display:flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content:center;
+    align-items: center;
+}
+
+div.gallery-images-large {
+    display:flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content:center;
+    padding:20px;
+
+}
+
+img.gallery-small {
+    max-width: 300px;
+    flex: 1;
+    padding: 20px;
+}
+
+img.gallery-large {
+    width:fit-content;
+    max-width: 640px;
+    width: 100%;
+    padding-top: 10px;
+
+}
+
+div.feature-container {
+    text-align: center;
+    color:black;
+    align-items: center;
+    width:100%;
+    
+}
+
+div.feature-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.feature {
+/*    width: calc(25%); 
+    text-align: center; 
+    margin:10px;
+    flex: 1 1;*/
+    max-width: 240px;
+    margin:20px;
+}
+
+
+p.feature {
+    max-width:100%;
+}
+
+div.feature img {
+    max-width:240px;
+    padding:10px;
+}
+
+div.team {
+    text-align: center;
+    color:black;
+    align-items: center;
+}
+
+div.team-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+img.team {
+    max-width:240px;
+    padding:10px;
+}
+
+div.team-container {
+
+}
+
+div.footer {
+    text-align: center;
+    color:whitesmoke;
+    align-items: center;
+    font-size:1em;
+    background-color: black;
+    padding:30px;
+}
+
+div.footer a {
+    color: #cccccc; /* Light grey color */
+    font-size: 14px;
+    text-decoration: underline; 
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+div.footer a:hover, div.footer a:focus {
+    color: #ffffff; /* White color on hover/focus */
+    text-decoration: underline; /* Underline appears on hover/focus */
+}
+
+p.footer-title {
+}
+
+@media screen and (max-width: 1200px) {
+    /* Styles for screens smaller than 1200px */
+}
+
+@media screen and (max-width: 768px) {
+    /* Styles for tablet screens */
+}
+
+@media screen and (max-width: 480px) {
+    /* Styles for mobile screens */
+}
+
+/*@media (max-width: 800px) {
+    div .feature {
+        width: calc(50% - 20px); /* Adjust width for 3x2 layout 
+    }
+} */
+
+/*@media (max-width: 600px) {
+    div .feature {
+        width: 100%;  Full width for 6x1 layout 
+    }
+}*/
