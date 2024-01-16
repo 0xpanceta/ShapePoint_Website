@@ -2,6 +2,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
+
 .container {
     max-width: 1200px; /* or 1400px based on your preference */
     margin: auto;
@@ -268,3 +270,45 @@ p.footer-title {
         width: 100%;  Full width for 6x1 layout 
     }
 }*/
+
+/* Basic Navbar Styling */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hamburger Button Styling */
+#hamburger-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Menu Items Styling */
+#menu-items {
+    display: none; /* Hidden by default */
+}
+
+/* Visible class for showing menu */
+.visible {
+    display: block;
+}
+
+/* Style for menu links */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+}
+
+/* Hover effect for links */
+nav a:hover {
+    background-color: #555;
+}

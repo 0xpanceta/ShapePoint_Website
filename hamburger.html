@@ -6,12 +6,26 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="shared_elements/shared_elements.js"></script>
+
     <title>ShapePoint Home</title>
 </head>
 <body>
     <div class="container">
     <div calss="widther"></div>
     <div id="navbar-placeholder"></div>
+    <nav>
+        <!-- Hamburger Button -->
+        <button id="hamburger-btn">☰</button>
+    
+        <!-- Menu Items (hidden by default) -->
+        <div id="menu-items" class="">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <!-- Add other menu items here -->
+        </div>
+    </nav>
     <div class="header">
         <h1>ShapePoint POSs make <br><u>$10k profit per month</u></h1>
         <p>You customers want to know their bodyweight fat %,</p><p style="font-style: italic;">today</p>
@@ -87,6 +101,8 @@
     <script>
         loadSharedContent();
     </script>
+        <script src="hamburger.js"></script>
+
 </div>
 </body>
 </html>
