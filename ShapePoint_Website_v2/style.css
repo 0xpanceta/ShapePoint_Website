@@ -44,6 +44,10 @@ header {
     text-align: center;
     padding: 50px 20px;
     position: relative;
+    border-radius: 45%;
+    background-color: var(--background-color);
+    box-shadow: 0 0 2px white, 0 0 6px white, 0 0 8px white, 0 0 10px white, 0 0 12px white, 0 0 14px white, inset 0 0 10px white;
+    margin-top:2%;
 }
 
 header::after {
@@ -55,6 +59,8 @@ header::after {
     bottom: 0;
     background: rgba(0, 0, 0, 0.7); /* Black with 50% opacity */
     z-index: 1; /* Ensure it's below the text */
+    border-radius: 45%;
+
 }
 
 header h1, header p, button.cta-button {
@@ -280,7 +286,7 @@ nav ul li {
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 nav {
-    background-color: #333333; /* Chrome color */
+    background-color: var(--background-color);
     color: #ffd700;
     font-family: 'Orbitron', sans-serif;
     /*display: flex;*/
