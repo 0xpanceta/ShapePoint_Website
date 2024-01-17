@@ -1,0 +1,407 @@
+:root {
+    --primary-color: #00DFFC;
+    --secondary-color: #FF48C4;
+    --tertiary-color: #0FFF95;
+    --background-color: #101010;
+    --accent-color: #C0C0C0;
+    --text-color: #FFFFFF;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif; /* Or any futuristic font of your choice */
+    margin:0px;
+}
+
+.button-primary {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.button-secondary {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+.text-highlight {
+    color: var(--tertiary-color);
+}
+
+.border-accent {
+    border-color: var(--accent-color);
+}
+
+div.container {
+    max-width:1200px;
+    width:80%;
+    margin:0px auto;
+}
+
+header {
+    background-image: url('images/ShapePoint-proto-2.png'); /* Add your stylized store image */
+    background-size: cover;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+header::after {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Black with 50% opacity */
+    z-index: 1; /* Ensure it's below the text */
+}
+
+header h1, header p, button.cta-button {
+    position: relative; /* Ensure these elements are above the overlay */
+    z-index: 2;}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #FFFFFF;
+    font-size: 2.5em;
+}
+
+header p {
+    font-family: 'Orbitron', sans-serif;
+    color: #00DFFC;
+    font-size: 1.5em;
+}
+
+button.cta-button {
+    background-color: #00C9FF; /* Bright Neon Blue */
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2em;
+    padding: 15px 40px;
+    border: 2px solid #00B5E2; /* Slightly darker shade for border */
+    border-radius: 50px; /* Pill shape */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px #00C9FF, inset 0 0 10px white; /* Outer and inner glow */
+    text-transform: uppercase; /* Optional: makes text all caps */
+    margin: 0 0 20px;
+}
+
+button.cta-button:hover {
+    background-color: #00E5FF; /* Lighter shade for hover */
+    box-shadow: 0 0 20px #00E5FF, inset 0 0 15px white;
+    transform: translateY(-3px); /* Button lifts up slightly */
+}
+
+button.cta-button a {
+    text-decoration: none; /* No underline */
+    color: white;
+}
+
+main {
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    margin: 0 auto;    
+}
+
+section {
+    background-color: #1A1A1A; /* Slightly lighter black for sections */
+    margin: 25px 0; /* Space out each section */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+
+    text-align:center;
+}
+
+section h2 {
+    font-family: 'Orbitron', sans-serif; /* Futuristic font for headers */
+    color: #00DFFC; /* Neon blue for headers */
+    margin-bottom: 15px;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 15px;
+}
+
+.testimonial-container {
+    align-items: center;
+    padding:15px;
+    flex: 1 1 100px;
+    max-width:200px;
+}
+
+.testimonial-image {
+    width:100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for images */
+
+}
+
+.testimonial-title {
+    font-size:1.25em;
+    font-weight: bold;
+}
+
+.testimonial-caption {
+    font-size: 0.85em;
+}
+
+.testimonial-title, .testimonial-caption {
+    color: var(--secondary-color); /* Neon pink for testimonial text */
+}
+
+.feature-container {
+    display:flex;
+    margin:5px auto;
+    margin-bottom: 15px;
+    
+    background-color: #2a2a2a; /* Slightly lighter than the background for contrast */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width:650px;
+}
+
+.feature-container i {
+    width: 20%;
+    margin: auto 0;
+    font-size: 2em; /* Larger icons */
+    color: var(--tertiary-color); /* Neon green for icons */
+    margin-right: 10px;
+}
+
+.feature-text {
+    text-align: left;
+    margin:4%;
+}
+
+.feature-text p {
+    margin:0;
+}
+
+.feature-title {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.joining-process {
+    text-align: left;
+    background-color: #2a2a2a; /* Slightly lighter than the background for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: var(--text-color);
+    max-width:650px;
+    margin: 0 auto;
+}
+
+.joining-process ol {
+    counter-reset: step-counter;
+    padding-left: 0;
+    font-weight: bold;
+    list-style: none;
+    
+}
+
+.joining-process li {
+    counter-increment: step-counter;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    padding-left: 35px;
+}
+
+
+.joining-process li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    background-color: var(--primary-color); /* Neon blue for numbers */
+    color: var(--background-color);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.joining-process p {
+    font-weight:lighter;
+}
+
+.shapepoint-team {
+    /*display:flex;
+    text-align: left;*/
+
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: var(--text-color);
+    margin: 25px 0;
+}
+
+.shapepoint-team img {
+    object-fit:contain;
+    margin:0 2% auto;
+    width: 30%; /* Adjust as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.team-text p {
+    padding: 0 5%;
+    text-align: left;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;}
+
+nav ul .right-buttons {
+    display: flex;
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+nav {
+    background-color: #333333; /* Chrome color */
+    color: #ffd700;
+    font-family: 'Orbitron', sans-serif;
+    /*display: flex;*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav a {
+    color: #ffd700;
+    text-decoration: none; 
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffff00; /* Neon color */
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger-icon {
+        display: block;
+        cursor: pointer;
+    }
+    nav a {
+        display: none;
+    }
+    nav.active a {
+        display: block;
+        text-align: center;
+    }
+
+    .neon-button {
+        display: none;
+    }
+
+    .shapepoint-team {
+        display:block;
+    }
+}
+
+
+
+footer {
+    background-color: #333333; /* Darker shade for distinctiveness */
+    color: #CCCCCC; /* Light grey for text, ensuring readability */
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer a {
+    color: #00DFFC; /* Neon blue for links */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #FF48C4; /* Neon pink for hover effect */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+/* Responsive Design for Footer */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 10px;
+    }
+
+
+}
+
+/* Base Style for Buttons */
+.neon-button {
+    background-color: transparent;
+    color: #FFFF00;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    margin:7px
+}
+
+/* Blue and White Neon Button */
+.neon-button.blue {
+    box-shadow: 0 0 1px #00DFFC, 0 0 3px #00DFFC, 0 0 4px #00DFFC, 0 0 5px #00B5E2, 0 0 6px #00B5E2, 0 0 7px #00B5E2, inset 0 0 10px white;
+}
+
+.neon-button.blue:hover {
+    box-shadow: 0 0 10px #00DFFC, 0 0 20px #00DFFC, 0 0 30px #00DFFC, 0 0 40px #00B5E2, 0 0 50px #00B5E2, 0 0 60px #00B5E2, inset 0 0 15px white;
+}
+
+/* Pink and White Neon Button */
+.neon-button.pink {
+    box-shadow: 0 0 1px #FF48C4, 0 0 3px #FF48C4, 0 0 4px #FF48C4, 0 0 5px #FF1493, 0 0 6px #FF1493, 0 0 7px #FF1493, inset 0 0 10px white;
+}
+
+.neon-button.pink:hover {
+    box-shadow: 0 0 10px #FF48C4, 0 0 20px #FF48C4, 0 0 30px #FF48C4, 0 0 40px #FF1493, 0 0 50px #FF1493, 0 0 60px #FF1493, inset 0 0 15px white;
+}
+
